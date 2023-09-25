@@ -1,11 +1,11 @@
 {
-    "name": "soarecostin/file-vault",
+    "name": "secureit/file-vault",
     "description": "",
     "keywords": [
         "laravel", "encrypt", "decrypt", "encryption", "decryption",
         "cbc", "php", "file", "file-vault"
     ],
-    "homepage": "https://github.com/soarecostin/file-vault",
+    "homepage": "https://github.com/SecureIT-Swiss/file-vault-php-8-2",
     "license": "MIT",
     "type": "library",
     "authors": [
@@ -13,24 +13,29 @@
             "name": "Costin Soare",
             "email": "soarecostin@gmail.com",
             "role": "Developer"
+        },
+        {
+            "name": "Secure IT",
+            "email": "info@secureit.ch",
+            "role": "Developer"
         }
     ],
     "require": {
-        "php": "^7.2|^8.0",
-        "illuminate/support": "5.8.* || 6.*.* || ^7.0 || ^8.0"
+        "php": "^7.2|^8.2",
+        "illuminate/support": "5.8.* || 6.*.* || ^7.0 || ^8.0 || ^v10.24"
     },
     "require-dev": {
-        "orchestra/testbench": "^5.0|^6.0",
-        "phpunit/phpunit": "^8.0"
+        "orchestra/testbench": "^5.0|^6.0|^8.11",
+        "phpunit/phpunit": "^8.0|10.3.5"
     },
     "autoload": {
         "psr-4": {
-            "SoareCostin\\FileVault\\": "src"
+            "SecureIT\\FileVault\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "SoareCostin\\FileVault\\Tests\\": "tests"
+            "SecureIT\\FileVault\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -44,10 +49,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "SoareCostin\\FileVault\\FileVaultServiceProvider"
+                "SecureIT\\FileVault\\FileVaultServiceProvider"
             ],
             "aliases": {
-                "FileVault": "SoareCostin\\FileVault\\Facades\\FileVault"
+                "FileVault": "SecureIT\\FileVault\\Facades\\FileVault"
             }
         }
     }

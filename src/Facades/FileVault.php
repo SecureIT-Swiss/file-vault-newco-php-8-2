@@ -1,6 +1,6 @@
 <?php
 
-namespace SoareCostin\FileVault\Facades;
+namespace SecureIT\FileVault\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

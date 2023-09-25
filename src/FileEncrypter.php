@@ -1,6 +1,6 @@
 <?php
 
-namespace SoareCostin\FileVault;
+namespace SecureIT\FileVault;
 
 use Exception;
 use Illuminate\Support\Str;

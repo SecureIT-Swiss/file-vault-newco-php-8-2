@@ -1,11 +1,11 @@
 <?php
 
-namespace SoareCostin\FileVault\Tests;
+namespace SecureIT\FileVault\Tests;
 
 use Illuminate\Support\Facades\Storage;
 use Orchestra\Testbench\TestCase;
-use SoareCostin\FileVault\Facades\FileVault;
-use SoareCostin\FileVault\FileVaultServiceProvider;
+use SecureIT\FileVault\FileVaultServiceProvider;
+use SecureIT\FileVault\Facades\FileVault;
 
 class FileVaultTest extends TestCase
 {
@@ -62,7 +62,7 @@ class FileVaultTest extends TestCase
     protected function generateRandomKey()
     {
         return 'base64:'.base64_encode(
-            \SoareCostin\FileVault\FileVault::generateKey()
+            \SecureIT\FileVault\FileVault::generateKey()
         );
     }
 
